@@ -1,0 +1,25 @@
+repos:
+  # pre-commit hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  # local hooks
+  - repo: local
+    hooks:
+      - id: eslint
+        name: eslint
+        language: node
+        entry: npx eslint --ext .ts,.tsx,.js app
+        pass_filenames: false
+
+      - id: prettier
+        name: prettier
+        language: node
+        entry: npx prettier --write
+        files: \.(js|ts|tsx|json|yaml|yml)$
+        pass_filenames: true

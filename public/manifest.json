@@ -1,0 +1,23 @@
+{
+  "name": "grav",
+  "short_name": "grav",
+  "description": "grav is a tech-oriented holding company that represents the interests of Hunter Chemelli and Thatcher Thornberry.",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "orientation": "portrait",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/assets/img/logo.png",
+      "sizes": "1000x1000"
+    }
+  ],
+  "icons_apple": [
+    {
+      "src": "/assets/img/apple_touch_icon.png",
+      "sizes": "180x180"
+    }
+  ]
+}
