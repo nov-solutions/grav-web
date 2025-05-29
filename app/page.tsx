@@ -1,7 +1,3 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-
 import { Nav } from '@/components/Nav';
 import { Hero } from '@/components/Hero';
 import { LogoCarousel } from '@/components/LogoCarousel';
@@ -11,30 +7,12 @@ import { Founders } from '@/components/Founders';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
-  const [prevScrollPosition, setPrevScrollPosition] = useState(0);
-  const [navVisible, setNavVisible] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const isScrollingDown = scrollPosition > prevScrollPosition;
-      
-      if (Math.abs(scrollPosition - prevScrollPosition) > 70) {
-        setNavVisible(!isScrollingDown);
-        setPrevScrollPosition(scrollPosition);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPosition]);
-
   return (
     <>
-      <Nav navVisible={navVisible} />
+      <Nav />
 
       <section
-        className="h-[50vh] flex items-center w-full bg-cover bg-center bg-[url('https://framerusercontent.com/images/SSXLWXwuQtiAVh8lr6lZo6e28.jpg')]"
+        className="h-[66.67vh] flex items-center w-full bg-cover bg-center bg-[url('https://framerusercontent.com/images/SSXLWXwuQtiAVh8lr6lZo6e28.jpg')]"
       >
         <Hero />
       </section>

@@ -1,6 +1,27 @@
-import Link from 'next/link';
+'use client';
 
-export const Nav = ({ navVisible }: { navVisible: boolean }) => {
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+
+export const Nav = () => {
+  const [prevScrollPosition, setPrevScrollPosition] = useState(0);
+  const [navVisible, setNavVisible] = useState(true);
+
+  useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const isScrollingDown = scrollPosition > prevScrollPosition;
+        
+        if (Math.abs(scrollPosition - prevScrollPosition) > 70) {
+          setNavVisible(!isScrollingDown);
+          setPrevScrollPosition(scrollPosition);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPosition]);
+  
   return (
     <nav className={`fixed w-screen sm:w-full px-4 sm:px-0 z-20 backdrop-blur-md bg-black/25 items-center transition-transform duration-300 ${
       navVisible ? 'translate-y-0' : '-translate-y-full' 
