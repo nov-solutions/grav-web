@@ -4,7 +4,7 @@ import { RiLinkedinFill } from '@remixicon/react';
 
 export const Footer = () => {
   return (
-    <footer className="mx-auto flex flex-col max-w-screen-xl w-full space-y-4 py-6 sm:py-12 px-4 sm:px-0">
+    <footer className="mx-auto flex flex-col max-w-screen-xl w-full space-y-4 py-12 sm:py-24 px-4 sm:px-0">
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-between">
           <Link href="/" className="flex items-center">
             <img

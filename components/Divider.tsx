@@ -1,5 +1,5 @@
 export const Divider = () => {
   return (
-    <hr className="hidden sm:inline border border-neutral-800 w-full max-w-screen-xl" />
+    <hr className="border border-neutral-800 w-3/4 sm:w-full max-w-screen-xl" />
   );
 }; 

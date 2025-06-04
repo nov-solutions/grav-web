@@ -36,7 +36,7 @@ html {
 * {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 300ms;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .animate-scroll {
-  animation: scroll 60s linear infinite;
+  animation: scroll 120s linear infinite;
   will-change: transform;
 }
 
@@ -76,16 +76,15 @@ h1, h2, h3, h4, h5, h6 {
 .gradual-border::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   height: 1px;
-  width: 100%;
-  opacity: 0;
+  width: 0;
   background: #FFFFFF;
-  transition: opacity 0.75s ease-in-out;
+  transition: width 1.5s ease-in-out;
   z-index: 10;
 }
 
 .gradual-border:hover::after {
-  opacity: 1;
+  width: 100%;
 }

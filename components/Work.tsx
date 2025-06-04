@@ -9,7 +9,7 @@ export const Work = () => {
           key={company.name}
           href={company.url}
           target="_blank"
-          className="gradual-border relative py-8 sm:p-8 border-b border-neutral-800"
+          className="gradual-border relative py-8 sm:p-8 border-t border-neutral-800"
         >
           <div className="flex flex-col">
             <div className="justify-between flex mb-4">
