@@ -4,7 +4,7 @@ export const LogoCarousel = () => {
   const carouselLogos = companies.map(company => company.carouselLogo);
 
   return (
-    <div className="pt-12 sm:pt-24 pb-24 sm:pb-36 w-full max-w-screen-xl px-4 sm:px-0">
+    <div className="flex flex-grow py-12 sm:py-24 w-full max-w-screen-xl items-center px-4 sm:px-0">
       <div className="relative overflow-hidden w-full">
         <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-black to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-black to-transparent z-10" />

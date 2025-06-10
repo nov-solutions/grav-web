@@ -22,7 +22,7 @@ export const Work = () => {
                 <span className="text-sm text-white">{company.category}</span>
               </div>
             </div>
-            <h3 className="text-lg font-medium text-white mb-2">{company.name}</h3>
+            <span className="text-lg font-medium text-white mb-2 leading-none">{company.name}</span>
             <p className="text-neutral-500">{company.description}</p>
             {company.descriptionTwo && (
               <>

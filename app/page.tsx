@@ -11,7 +11,7 @@ export default function Home() {
       <Nav />
 
       <section
-        className="flex flex-col items-center w-full"
+        className="h-[75vh] flex flex-col items-center w-full"
       >
         <Hero />
         <LogoCarousel />
@@ -20,14 +20,14 @@ export default function Home() {
       {/* <Divider /> */}
 
       <section id="work" className="py-12 sm:py-24 w-full max-w-screen-xl space-y-12 px-4 sm:px-0">
-        <h2 className="text-2xl font-nmedium">Work</h2>
+        <h2 className="text-2xl font-medium tracking-tight leading-none">Work</h2>
         <Work />
       </section>
 
       {/* <Divider /> */}
 
       <section id="founders" className="py-12 sm:py-24 w-full max-w-screen-xl space-y-12 px-4 sm:px-0">
-        <h2 className="text-2xl font-medium">Founders</h2>
+        <h2 className="text-2xl font-medium tracking-tight leading-none">Founders</h2>
         <Founders />
       </section>
 
