@@ -28,6 +28,15 @@ export const companies = [
     url: 'https://elph.ai'
   },
   {
+    name: 'FoxIO',
+    tagline: 'Innovation at the cutting edge of IT security',
+    description: 'FoxIO is a technology innovations company focused on creating simple, highly-effective solutions to major industry problems.',
+    logo: '/assets/img/logos/foxio.png',
+    carouselLogo: '/assets/img/carousel/foxio.png',
+    category: 'Security',
+    url: 'https://foxio.io'
+  },
+  {
     name: 'Griphn',
     tagline: 'Elevate your private aviation management',
     description: 'Griphn is a private jet tracking and flight request management system.',
@@ -35,6 +44,15 @@ export const companies = [
     carouselLogo: '/assets/img/carousel/griphn.png',
     category: 'Aviation Management',
     url: 'https://griphn.com'
+  },
+  {
+    name: 'Impirics',
+    tagline: 'Online payment processing made simple',
+    description: 'Impirics provides payment processing offerings that enable seamless online transactions.',
+    logo: '/assets/img/logos/impirics.png',
+    carouselLogo: '/assets/img/carousel/impirics.png',
+    category: 'Payment Processing',
+    url: 'https://impirics.com'
   },
   {
     name: 'Mascxt',
@@ -55,15 +73,6 @@ export const companies = [
     url: 'mailto:hunter@grav.solutions'
   },
   {
-    name: 'pulsiv',
-    tagline: `grav's tech agency`,
-    description: 'Pulsiv is a tech agency that offers web development, process optimization, and other IT consulting services to propel businesses forward.',
-    logo: '/assets/img/logos/pulsiv.png',
-    carouselLogo: '/assets/img/carousel/pulsiv.png',
-    category: 'Tech Agency',
-    url: 'mailto:hunter@pulsiv.solutions'
-  },
-  {
     name: 'Omniscreen',
     tagline: 'Enhancing SSPM with NSPM+',
     description: 'Omniscreen was acquired by AppOmni in December 2024.',
@@ -72,6 +81,24 @@ export const companies = [
     carouselLogo: '/assets/img/carousel/omniscreen.png',
     category: 'Security',
     url: 'http://omniscreen.io'
+  },
+  {
+    name: 'Prophessor',
+    tagline: 'Salesforce security done right',
+    description: `Prophessor develops enterprise-grade solutions that enhance and extend Salesforce's native security and privacy capabilities.`,
+    logo: '/assets/img/logos/prophessor.png',
+    carouselLogo: '/assets/img/carousel/prophessor.png',
+    category: 'Security',
+    url: 'https://prophessor.com'
+  },
+  {
+    name: 'pulsiv',
+    tagline: `grav's tech agency`,
+    description: 'Pulsiv is a tech agency that offers web development, process optimization, and other IT consulting services to propel businesses forward.',
+    logo: '/assets/img/logos/pulsiv.png',
+    carouselLogo: '/assets/img/carousel/pulsiv.png',
+    category: 'Tech Agency',
+    url: 'mailto:hunter@pulsiv.solutions'
   },
   {
     name: 'Raiquun',
