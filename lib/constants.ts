@@ -7,7 +7,7 @@ export const companies = [
     logo: '/assets/img/logos/cwolves.png',
     carouselLogo: '/assets/img/carousel/cwolves.png',
     category: 'Security',
-    url: 'https://cwolves.com'
+    url: 'http://cwolves.com'
   },
   {
     name: 'DarkSail',
@@ -16,7 +16,7 @@ export const companies = [
     logo: '/assets/img/logos/darksail.png',
     carouselLogo: '/assets/img/carousel/darksail.png',
     category: 'Security',
-    url: 'https://darksail.ai'
+    url: 'https://arctypeventures.com'
   },
   {
     name: 'Elph',
@@ -52,7 +52,7 @@ export const companies = [
     logo: '/assets/img/logos/impirics.png',
     carouselLogo: '/assets/img/carousel/impirics.png',
     category: 'Payment Processing',
-    url: 'https://impirics.com'
+    url: 'https://arctypeventures.com'
   },
   {
     name: 'Mascxt',
@@ -61,7 +61,7 @@ export const companies = [
     logo: '/assets/img/logos/mascxt.png',
     carouselLogo: '/assets/img/carousel/mascxt.png',
     category: 'NIL Management',
-    url: 'https://mascxt.com'
+    url: 'https://arctypeventures.com'
   },
   {
     name: 'nov',
@@ -103,7 +103,7 @@ export const companies = [
   {
     name: 'Raiquun',
     tagline: 'Heroku environment command center',
-    description: `Raiquun is a Heroku Add-on that enables users to intelligently manage their organization's Data Services and Applications in one place.`,
+    description: `Raiquun enables Heroku users to intelligently manage and optimize their organization's Applications and Data Services in one place through its Add-on, DataVisor.`,
     logo: '/assets/img/logos/raiquun.png',
     carouselLogo: '/assets/img/carousel/raiquun.png',
     category: 'PaaS Management',
