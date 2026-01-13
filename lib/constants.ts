@@ -115,7 +115,7 @@ export const founders = [
   {
     name: 'Hunter Chemelli',
     title: 'Co-Founder, Managing Member, Principal Agent',
-    headshotSrc: '/assets/img/headshots/hunter.jpg',
+    headshotSrc: '/assets/img/headshots/hunter.png',
     linkedinURL: 'https://linkedin.com/in/hunterchemelli'
   },
   {
