@@ -1,7 +1,7 @@
 import { Nav } from '@/components/Nav';
 import { Hero } from '@/components/Hero';
 import { LogoCarousel } from '@/components/LogoCarousel';
-import { Work } from '@/components/Work';
+import { Portfolio } from '@/components/Portfolio';
 import { Founders } from '@/components/Founders';
 import { Footer } from '@/components/Footer';
 
@@ -19,9 +19,9 @@ export default function Home() {
 
       {/* <Divider /> */}
 
-      <section id="work" className="py-12 sm:py-24 w-full max-w-screen-xl space-y-12 px-4 sm:px-0">
-        <h2 className="text-2xl font-medium tracking-tight leading-none">Work</h2>
-        <Work />
+      <section id="portfolio" className="py-12 sm:py-24 w-full max-w-screen-xl space-y-12 px-4 sm:px-0">
+        <h2 className="text-2xl font-medium tracking-tight leading-none">Portfolio</h2>
+        <Portfolio />
       </section>
 
       {/* <Divider /> */}

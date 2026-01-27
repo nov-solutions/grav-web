@@ -1,7 +1,7 @@
 import { companies } from '@/lib/constants';
 import { Company } from '@/lib/types';
 
-export const Work = () => {
+export const Portfolio = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 sm:gap-8 sm:auto-rows-fr">
       {companies.map((company: Company) => (
