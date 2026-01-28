@@ -1,6 +1,6 @@
 export const companies = [
   {
-    name: 'Arctype Ventures',
+    name: 'Arctype',
     tagline: 'Creating enterprise value at startup speed',
     description: 'Arctype is Austin\'s premier enterprise-focused venture studio.',
     logo: '/assets/img/logos/arctype_ventures.png',
