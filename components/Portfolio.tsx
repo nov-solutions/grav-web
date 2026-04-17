@@ -3,13 +3,13 @@ import { Company } from '@/lib/types';
 
 export const Portfolio = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 sm:gap-8 sm:auto-rows-fr">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-8 md:auto-rows-fr">
       {companies.map((company: Company) => (
         <a
           key={company.name}
           href={company.url}
           target="_blank"
-          className="gradual-border relative py-8 sm:p-8 border-t border-neutral-800"
+          className="gradual-border relative py-8 md:p-8 border-t border-neutral-800"
         >
           <div className="flex flex-col">
             <div className="justify-between space-x-4 flex mb-4">
