@@ -15,7 +15,7 @@ export const companies = [
     logo: '/assets/img/logos/nov.png',
     carouselLogo: '/assets/img/carousel/nov.png',
     category: 'Product Studio',
-    url: 'mailto:hunter@grav.solutions'
+    url: 'mailto:hello@grav.solutions'
   },
   {
     name: 'pulsiv',
@@ -24,7 +24,7 @@ export const companies = [
     logo: '/assets/img/logos/pulsiv.png',
     carouselLogo: '/assets/img/carousel/pulsiv.png',
     category: 'Tech Agency',
-    url: 'mailto:hunter@pulsiv.solutions'
+    url: 'mailto:hello@pulsiv.solutions'
   }
 ];
 
