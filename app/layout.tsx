@@ -80,7 +80,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${notoSans.className} ${notoSans.variable} font-sans items-center antialiased flex flex-col min-h-screen overscroll-none scroll-smooth`}
+        className={`${notoSans.className} ${notoSans.variable} ${prata.variable} font-sans items-center antialiased flex flex-col min-h-screen overscroll-none scroll-smooth`}
       >
         {children}
       </body>

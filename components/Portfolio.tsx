@@ -18,11 +18,11 @@ export const Portfolio = () => {
                 alt={company.name}
                 className="object-contain w-12 h-12"
               />
-              <div className="px-3 py-1 rounded-full bg-neutral-800 h-fit">
-                <span className="text-sm text-white truncate">{company.category}</span>
+              <div className="px-3 py-1.5 flex items-center rounded-full bg-neutral-800 h-fit">
+                <span className="text-xs text-white truncate">{company.category}</span>
               </div>
             </div>
-            <p className="text-lg font-medium text-white mb-1 leading-none font-serif">{company.name}</p>
+            <p className="text-lg font-medium text-white mb-2 leading-none font-serif">{company.name}</p>
             <p className="text-neutral-500 text-sm">{company.description}</p>
             {company.descriptionTwo && (
               <>
