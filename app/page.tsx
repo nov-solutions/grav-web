@@ -20,14 +20,14 @@ export default function Home() {
       {/* <Divider /> */}
 
       <section id="portfolio" className="py-12 md:py-24 w-full max-w-screen-xl space-y-12 px-4 md:px-0">
-        <h2 className="text-2xl font-medium tracking-tight leading-none">Portfolio</h2>
+        <h2 className="text-2xl italic font-medium tracking-tighter leading-none">Portfolio</h2>
         <Portfolio />
       </section>
 
       {/* <Divider /> */}
 
       <section id="founders" className="py-12 md:py-24 w-full max-w-screen-xl space-y-12 px-4 md:px-0">
-        <h2 className="text-2xl font-medium tracking-tight leading-none">Founders</h2>
+        <h2 className="text-2xl italic font-medium tracking-tighter leading-none">Founders</h2>
         <Founders />
       </section>
 

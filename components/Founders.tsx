@@ -8,7 +8,7 @@ export const Founders = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {founders.map((founder) => (
-        <div key={founder.name} className="flex flex-col md:flex-row gap-2 md:gap-4">
+        <div key={founder.name} className="flex flex-col md:flex-row gap-4">
           <div className="md:self-center w-16 h-16">
             <img
               src={founder.headshotSrc}
@@ -18,8 +18,8 @@ export const Founders = () => {
           </div>
           <div className="flex flex-col space-y-1">
             <div className="flex flex-col">
-              <span className="text-lg font-medium text-white leading-none">{founder.name}</span>
-              <p className="text-sm text-neutral-500 mb-1">{founder.title}</p>
+              <p className="text-lg font-medium mb-1 text-white font-serif leading-none">{founder.name}</p>
+              <p className="text-xs text-neutral-500">{founder.title}</p>
             </div>
             <Link
               href={founder.linkedinURL}

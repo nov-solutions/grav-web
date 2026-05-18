@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-dm-sans)'],
+        sans: ['var(--font-noto-sans)'],
+        serif: ['var(--font-prata)'],
       },
       colors: {
         background: 'hsl(var(--background))',

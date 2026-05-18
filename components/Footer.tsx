@@ -13,9 +13,9 @@ export const Footer = () => {
               width="56"
             />
           </Link>
-          <div className="flex gap-4">
-            <a href="#portfolio" className="text-white hover:text-violet-700 transition-colors">Portfolio</a>
-            <a href="#founders" className="text-white hover:text-violet-700 transition-colors">Founders</a>
+          <div className="flex gap-4 text-white text-sm">
+            <a href="#portfolio" className="hover:underline underline-offset-4">Portfolio</a>
+            <a href="#founders" className="hover:underline underline-offset-4">Founders</a>
           </div>
         </div>
         <hr className="hidden md:inline border border-neutral-800" />
@@ -23,7 +23,7 @@ export const Footer = () => {
           <Link href="https://www.linkedin.com/company/grav-solutions/" target="_blank">
             <RiLinkedinFill size={16} className="text-neutral-500 hover:text-white transition-colors" />
           </Link>
-          <p className="text-neutral-500 text-sm">© {new Date().getFullYear()} grav</p>
+          <p className="text-neutral-500 font-serif text-xs">© {new Date().getFullYear()} grav</p>
         </div>
       </footer>
   );

@@ -7,7 +7,7 @@ export const Hero = () => {
           alt="grav logo"
           className="w-1/2 md:w-1/3 animate-float md:order-2"
         />
-        <h1 className="text-4xl md:text-6xl text-center md:text-left font-medium md:order-1 tracking-tight leading-none">Tech-oriented holding company</h1>
+        <h1 className="text-3xl md:text-6xl text-center md:text-left font-medium md:order-1 tracking-tighter leading-none">Tech-oriented holding company</h1>
       </div>
     </div>
   );

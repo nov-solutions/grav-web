@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
-import { DM_Sans } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
+import { Prata } from 'next/font/google';
 import './globals.css';
-const dmSans = DM_Sans({
+const notoSans = Noto_Sans({
   subsets: ['latin'],
-  variable: '--font-dm-sans',
+  variable: '--font-noto-sans',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
+const prata = Prata({
+  subsets: ['latin'],
+  variable: '--font-prata',
+  weight: ['400'],
 });
 
 export const metadata: Metadata = {
@@ -74,7 +80,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${dmSans.className} ${dmSans.variable} font-sans items-center antialiased flex flex-col min-h-screen overscroll-none scroll-smooth`}
+        className={`${notoSans.className} ${notoSans.variable} ${prata.className} ${prata.variable} font-sans items-center antialiased flex flex-col min-h-screen overscroll-none scroll-smooth`}
       >
         {children}
       </body>
