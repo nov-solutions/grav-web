@@ -23,7 +23,7 @@ export const Footer = () => {
           <Link href="https://www.linkedin.com/company/grav-solutions/" target="_blank">
             <RiLinkedinFill size={16} className="text-neutral-500 hover:text-white transition-colors" />
           </Link>
-          <p className="text-neutral-500 font-serif text-xs">© {new Date().getFullYear()} grav</p>
+          <p className="text-neutral-500 text-xs">© {new Date().getFullYear()} grav</p>
         </div>
       </footer>
   );
