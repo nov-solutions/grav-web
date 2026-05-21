@@ -47,20 +47,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-scroll {
-  animation: scroll 60s linear infinite;
-  will-change: transform;
-}
-
 @keyframes float {
   0%, 100% {
     transform: translateY(2.5%);

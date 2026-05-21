@@ -1,31 +1,26 @@
+import Marquee from 'react-fast-marquee';
+
 import { companies } from '@/lib/constants';
 
 export const LogoCarousel = () => {
   const carouselLogos = companies.map(company => company.carouselLogo);
 
-  // Render enough sets to cover even ultra-wide screens
-  const numSets = 4;
-
   return (
-    <div className="flex flex-grow py-12 md:py-24 w-full max-w-screen-xl items-center px-4 md:px-0">
-      <div className="relative overflow-hidden w-full">
-        <div className="absolute left-0 top-0 bottom-0 w-12 md:w-24 bg-gradient-to-r from-black to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-12 md:w-24 bg-gradient-to-l from-black to-transparent z-10" />
-
-        {/* Scrolling content - multiple sets for seamless infinite loop */}
-        <div className="animate-scroll flex w-max gap-8 md:gap-16 whitespace-nowrap">
-          {Array.from({ length: numSets }).map((_, setIndex) => (
-            carouselLogos.map((logo, logoIndex) => (
+    <div className="flex flex-grow py-6 sm:py-12 w-full max-w-screen-xl items-center px-4">
+      <div className="relative w-full">
+        <Marquee gradient={true} gradientColor={"black"} speed={25} pauseOnHover>
+          {Array.from({ length: 4 }).flatMap((_, setIndex) =>
+            carouselLogos.map((logo, i) => (
               <img
-                key={`set-${setIndex}-logo-${logoIndex}`}
+                key={`${setIndex}-${i}`}
                 src={logo}
                 alt="Logo"
-                className="md:opacity-50 md:hover:opacity-100 transition-opacity h-6 md:h-8"
+                className="sm:opacity-50 sm:hover:opacity-100 transition-opacity h-6 sm:h-8 mr-8 sm:mr-16"
               />
             ))
-          ))}
-        </div>
+          )}
+        </Marquee>
       </div>
     </div>
   );
-}; 
+};

@@ -6,10 +6,10 @@ import { founders } from '@/lib/constants';
 
 export const Founders = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {founders.map((founder) => (
-        <div key={founder.name} className="flex flex-col md:flex-row gap-4">
-          <div className="md:self-center w-16 h-16">
+        <div key={founder.name} className="flex flex-col sm:flex-row gap-4">
+          <div className="sm:self-center w-16 h-16">
             <img
               src={founder.headshotSrc}
               alt={founder.name + " headshot"}
