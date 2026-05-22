@@ -18,8 +18,8 @@ export const Founders = () => {
           </div>
           <div className="flex flex-col space-y-1">
             <div className="flex flex-col">
-              <p className="text-lg font-medium mb-1.5 text-white leading-none">{founder.name}</p>
-              <p className="text-xs text-neutral-500">{founder.title}</p>
+              <p className="font-medium text-white leading-none">{founder.name}</p>
+              <p className="!mt-1.5 text-xs text-neutral-500">{founder.title}</p>
             </div>
             <Link
               href={founder.linkedinURL}

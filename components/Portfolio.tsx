@@ -11,7 +11,7 @@ export const Portfolio = () => {
           target="_blank"
           className="gradual-border relative py-8 sm:p-8 border-t border-neutral-800"
         >
-          <div className="flex flex-col">
+          <div className="flex flex-col space-y-1">
             <div className="justify-between space-x-4 flex mb-4">
               <img
                 src={company.logo}
@@ -22,12 +22,12 @@ export const Portfolio = () => {
                 <span className="text-xs text-white truncate">{company.category}</span>
               </div>
             </div>
-            <p className="text-lg font-medium text-white mb-2 leading-none">{company.name}</p>
-            <p className="text-neutral-500 text-sm">{company.description}</p>
+            <p className="font-medium text-white leading-none">{company.name}</p>
+            <p className="!mt-1.5 text-neutral-500 text-xs">{company.description}</p>
             {company.descriptionTwo && (
               <>
                 <br />
-                <p className="text-neutral-500">{company.descriptionTwo}</p>
+                <p className="text-neutral-500 text-xs">{company.descriptionTwo}</p>
               </>
             )}
           </div>

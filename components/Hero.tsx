@@ -1,7 +1,7 @@
 export const Hero = () => {
   return (
     <div className="min-h-[75%] justify-center flex w-full bg-cover bg-center bg-[url('https://framerusercontent.com/images/SSXLWXwuQtiAVh8lr6lZo6e28.jpg')]">
-      <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-8 max-w-screen-xl px-4 mt-16">
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-8 max-w-screen-xl px-8 mt-16">
         <img
           src="/assets/img/logo.png"
           alt="grav logo"
