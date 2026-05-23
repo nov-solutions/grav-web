@@ -26,7 +26,7 @@ export const Nav = () => {
     <nav className={`fixed w-screen sm:w-full px-8 z-20 backdrop-blur-md bg-black/25 items-center transition-transform duration-300 ${
       navVisible ? 'translate-y-0' : '-translate-y-full' 
     }`}>
-      <div className="py-6 flex mx-auto justify-between gap-4 sm:gap-8 w-full max-w-screen-xl px-8">
+      <div className="py-6 flex mx-auto justify-between gap-4 sm:gap-8 w-full max-w-screen-xl">
         <Link href="/" className="flex items-center">
           <img
             src="/assets/img/wordmark.png"
