@@ -20,7 +20,7 @@ export const companies = [
   {
     name: 'pulsiv',
     tagline: `grav's tech agency`,
-    description: 'Pulsiv is a tech agency that offers web development, process optimization, and other IT consulting services to propel businesses forward.',
+    description: 'Pulsiv is a tech agency that offers AI, web development, process optimization, and other IT consulting services to propel businesses forward.',
     logo: '/assets/img/logos/pulsiv.png',
     carouselLogo: '/assets/img/carousel/pulsiv.png',
     category: 'Tech Agency',
