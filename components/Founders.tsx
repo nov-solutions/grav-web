@@ -16,10 +16,10 @@ export const Founders = () => {
               className="grayscale rounded-full"
             />
           </div>
-          <div className="flex flex-col space-y-1">
+          <div className="flex flex-col space-y-1.5">
             <div className="flex flex-col">
               <p className="font-medium text-white leading-none">{founder.name}</p>
-              <p className="!mt-1.5 text-xs text-neutral-600">{founder.title}</p>
+              <p className="!mt-2 text-xs text-neutral-600">{founder.title}</p>
             </div>
             <Link
               href={founder.linkedinURL}
