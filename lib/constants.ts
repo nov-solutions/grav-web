@@ -31,13 +31,13 @@ export const companies = [
 export const founders = [
   {
     name: 'Hunter Chemelli',
-    title: 'Co-Founder, Managing Member, Principal Agent',
+    title: 'Co-Founder, General Partner, Principal Agent',
     headshotSrc: '/assets/img/headshots/hunter.png',
     linkedinURL: 'https://linkedin.com/in/hunterchemelli'
   },
   {
     name: 'Thatcher Thornberry',
-    title: 'Co-Founder, Managing Member, Principal Agent',
+    title: 'Co-Founder, General Partner, Principal Agent',
     headshotSrc: '/assets/img/headshots/thatcher.jpg',
     linkedinURL: 'https://www.linkedin.com/in/thatcher-thornberry-a7222a17b/'
   }
