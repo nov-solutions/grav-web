@@ -6,7 +6,7 @@ export const LogoCarousel = () => {
   const carouselLogos = companies.map(company => company.carouselLogo);
 
   return (
-    <div className="flex flex-grow py-6 sm:py-12 w-full max-w-screen-2xl items-center px-8">
+    <div className="flex flex-grow py-6 sm:py-12 w-full max-w-screen-xl items-center px-8">
       <div className="relative w-full">
         <Marquee gradient={true} gradientColor={"black"} speed={25}>
           {Array.from({ length: 4 }).flatMap((_, setIndex) =>
