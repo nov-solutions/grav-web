@@ -3,7 +3,6 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-// 04 — wireframe terrain
 function wireframeTerrain() {
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(45, 1, .1, 100);
@@ -34,8 +33,9 @@ function wireframeTerrain() {
       }`,
     wireframe: true,
   });
-  scene.add(new THREE.Mesh(geo, mat));
-  return { scene, camera, mat, geo, update: (t: number) => { mat.uniforms.uTime.value = t; camera.position.x = Math.sin(t * .15) * .4; camera.lookAt(0, 0, 0); } };
+  const mesh = new THREE.Mesh(geo, mat);
+  scene.add(mesh);
+  return { scene, camera, mat, geo, mesh, update: (t: number) => { mat.uniforms.uTime.value = t; camera.position.x = Math.sin(t * .15) * .4; camera.lookAt(0, 0, 0); } };
 }
 
 export const WireframeTerrain = ({ className }: { className?: string }) => {
@@ -45,18 +45,30 @@ export const WireframeTerrain = ({ className }: { className?: string }) => {
     const container = containerRef.current;
     if (!container) return;
 
-    const { scene, camera, mat, geo, update } = wireframeTerrain();
+    const { scene, camera, mat, geo, mesh, update } = wireframeTerrain();
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    // setSize is called with updateStyle=false (to keep a crisp high-DPR
+    // buffer), so the canvas has no CSS size of its own and would otherwise
+    // display at its buffer dimensions (w * devicePixelRatio) and overflow the
+    // container on high-DPR screens. Pin it to fill the container instead.
+    renderer.domElement.style.width = '100%';
+    renderer.domElement.style.height = '100%';
+    renderer.domElement.style.display = 'block';
     container.appendChild(renderer.domElement);
 
     const resize = () => {
       const w = container.clientWidth;
       const h = container.clientHeight;
       if (w === 0 || h === 0) return;
-      camera.aspect = w / h;
+      const aspect = w / h;
+      camera.aspect = aspect;
       camera.updateProjectionMatrix();
+      // The plane is a fixed 4 units wide, but the horizontal frustum widens
+      // with aspect ratio. Stretch the mesh along x so it always over-fills the
+      // frame on wide breakpoints instead of leaving empty space at the edges.
+      mesh.scale.x = Math.max(1, aspect);
       renderer.setSize(w, h, false);
     };
     resize();

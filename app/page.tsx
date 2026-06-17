@@ -19,14 +19,14 @@ export default function Home() {
 
       {/* <Divider /> */}
 
-      <section id="portfolio" className="my-12 sm:my-16 w-full max-w-screen-xl space-y-9 px-8">
+      <section id="portfolio" className="my-12 sm:my-16 w-full max-w-screen-2xl space-y-9 px-8">
         <h2 className="text-2xl font-medium tracking-tighter leading-none">Portfolio</h2>
         <Portfolio />
       </section>
 
       {/* <Divider /> */}
 
-      <section id="founders" className="my-12 sm:my-16 w-full max-w-screen-xl space-y-9 px-8">
+      <section id="founders" className="my-12 sm:my-16 w-full max-w-screen-2xl space-y-9 px-8">
         <h2 className="text-2xl font-medium tracking-tighter leading-none">Founders</h2>
         <Founders />
       </section>
