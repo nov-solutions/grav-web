@@ -23,7 +23,7 @@ export const Portfolio = () => {
               </div>
             </div>
             <p className="font-medium text-white leading-none">{company.name}</p>
-            <p className="!mt-2 text-neutral-600 text-xs">{company.description}</p>
+            <p className="text-neutral-600 text-xs">{company.description}</p>
             {company.descriptionTwo && (
               <>
                 <br />

@@ -25,7 +25,7 @@ export const Footer = () => {
           <Link href="https://www.linkedin.com/company/grav-solutions/" target="_blank">
             <RiLinkedinFill size={16} className="transition-colors" />
           </Link>
-          <p className="text-xs">Austin, Texas • Denver, Colorado</p>
+          <p className="text-xs">Austin, Texas | Denver, Colorado</p>
         </div>
       </div>
     </footer>

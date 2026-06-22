@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-noto-sans)'],
+        sans: ['var(--font-geist)'],
         serif: ['var(--font-prata)'],
       },
       colors: {

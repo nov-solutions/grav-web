@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Noto_Sans } from 'next/font/google';
+import { Geist } from 'next/font/google';
 import { Prata } from 'next/font/google';
 import './globals.css';
-const notoSans = Noto_Sans({
+const geist = Geist({
   subsets: ['latin'],
-  variable: '--font-noto-sans',
+  variable: '--font-geist',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 const prata = Prata({
@@ -80,7 +80,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${notoSans.className} ${notoSans.variable} ${prata.variable} font-sans items-center antialiased flex flex-col min-h-screen overscroll-none scroll-smooth`}
+        className={`${geist.className} ${geist.variable} ${prata.variable} font-sans items-center antialiased flex flex-col min-h-screen overscroll-none scroll-smooth`}
       >
         {children}
       </body>
