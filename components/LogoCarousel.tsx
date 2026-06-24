@@ -15,7 +15,7 @@ export const LogoCarousel = () => {
                 key={`${setIndex}-${i}`}
                 src={logo}
                 alt="Logo"
-                className="sm:opacity-50 sm:hover:opacity-100 transition-opacity h-6 sm:h-8 mr-8 sm:mr-16"
+                className="brightness-0 invert sm:opacity-50 sm:hover:opacity-100 transition-opacity h-6 sm:h-8 mr-8 sm:mr-16"
               />
             ))
           )}

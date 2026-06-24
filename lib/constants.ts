@@ -9,6 +9,15 @@ export const companies = [
     url: 'https://arctypeventures.com'
   },
   {
+    name: 'AppOmni',
+    tagline: 'Prevent SaaS and AI data breaches',
+    description: 'AppOmni is a SaaS Security Posture Management (SSPM) and AI SaaS Security Posture Management (AISPM) platform that gives enterprise companies and their security teams continuous visibility into their SaaS applications, AI-enabled environments, and AI agents.',
+    logo: '/assets/img/logos/appomni.png',
+    carouselLogo: '/assets/img/carousel/appomni.png',
+    category: 'SSPM, AISPM',
+    url: 'https://www.appomni.com'
+  },
+  {
     name: 'nov',
     tagline: `grav's product studio`,
     description: 'Nov is a product studio that fuses novel ideas, cutting-edge tools, and the right people to create stellar software solutions.',

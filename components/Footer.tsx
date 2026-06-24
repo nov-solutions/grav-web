@@ -15,7 +15,7 @@ export const Footer = () => {
               width="56"
             />
           </Link>
-          <div className="flex gap-4 text-xs sm:text-sm">
+          <div className="flex gap-4 font-medium text-xs sm:text-sm">
             <a href="#portfolio" className="hover:underline underline-offset-4">Portfolio</a>
             <a href="#founders" className="hover:underline underline-offset-4">Founders</a>
           </div>
