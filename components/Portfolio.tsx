@@ -19,15 +19,21 @@ export const Portfolio = () => {
                 className="brightness-0 invert object-contain w-12 h-12"
               />
               <div className="px-3 py-1.5 flex items-center rounded-full bg-neutral-600 h-fit">
-                <span className="text-xs text-white truncate">{company.category}</span>
+                <span className="text-xs text-white font-medium truncate">
+                  {company.category}
+                </span>
               </div>
             </div>
-            <p className="font-medium text-white leading-none tracking-tight">{company.name}</p>
+            <p className="font-medium text-white leading-none tracking-tight">
+              {company.name}
+            </p>
             <p className="text-neutral-600 text-xs">{company.description}</p>
             {company.descriptionTwo && (
               <>
                 <br />
-                <p className="text-neutral-600 text-xs">{company.descriptionTwo}</p>
+                <p className="text-neutral-600 text-xs">
+                  {company.descriptionTwo}
+                </p>
               </>
             )}
           </div>
@@ -35,4 +41,4 @@ export const Portfolio = () => {
       ))}
     </div>
   );
-}; 
+};
