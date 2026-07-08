@@ -10,24 +10,32 @@ export default function Home() {
     <>
       <Nav />
 
-      <section
-        className="h-[75vh] flex flex-col items-center w-full"
-      >
+      <section className="h-[75vh] flex flex-col items-center w-full">
         <Hero />
         <LogoCarousel />
       </section>
 
       {/* <Divider /> */}
 
-      <section id="portfolio" className="py-12 sm:py-16 w-full max-w-screen-xl space-y-9 px-8">
-        <h2 className="text-2xl font-medium tracking-tighter leading-none">Portfolio</h2>
+      <section
+        id="portfolio"
+        className="py-12 sm:py-16 w-full max-w-screen-xl space-y-9 px-8"
+      >
+        <h2 className="text-2xl font-serif font-medium tracking-tighter leading-none">
+          Portfolio
+        </h2>
         <Portfolio />
       </section>
 
       {/* <Divider /> */}
 
-      <section id="founders" className="py-12 sm:py-16 w-full max-w-screen-xl space-y-9 px-8">
-        <h2 className="text-2xl font-medium tracking-tighter leading-none">Founders</h2>
+      <section
+        id="founders"
+        className="py-12 sm:py-16 w-full max-w-screen-xl space-y-9 px-8"
+      >
+        <h2 className="text-2xl font-serif font-medium tracking-tighter leading-none">
+          Founders
+        </h2>
         <Founders />
       </section>
 

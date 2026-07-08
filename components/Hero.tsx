@@ -11,8 +11,10 @@ export const Hero = () => {
           alt="grav logo"
           className="w-1/2 md:w-2/5 sm:order-2"
         />
-        <h1 className="text-3xl sm:text-6xl text-center sm:text-left font-medium sm:order-1 tracking-tighter leading-none">Tech-oriented holding company</h1>
+        <h1 className="text-3xl font-serif sm:text-6xl text-center sm:text-left font-medium sm:order-1 tracking-tighter leading-none">
+          Tech-oriented holding company
+        </h1>
       </div>
     </div>
   );
-}; 
+};

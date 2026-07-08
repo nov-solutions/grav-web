@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { Geist } from 'next/font/google';
-import { Prata } from 'next/font/google';
+import { Geist, Prata } from 'next/font/google';
 import './globals.css';
+
 const geist = Geist({
   subsets: ['latin'],
   variable: '--font-geist',
@@ -18,10 +18,16 @@ export const metadata: Metadata = {
     template: `%s • grav`,
     default: `grav • tech-oriented holding company`,
   },
-  description: 'grav is a tech-oriented holding company that represents the interests of Hunter Chemelli and Thatcher Thornberry.',
+  description:
+    'grav is a tech-oriented holding company that represents the interests of Hunter Chemelli and Thatcher Thornberry.',
   applicationName: 'grav',
   referrer: 'origin-when-cross-origin',
-  keywords: ['grav', 'tech-oriented holding company', 'Hunter Chemelli', 'Thatcher Thornberry'],
+  keywords: [
+    'grav',
+    'tech-oriented holding company',
+    'Hunter Chemelli',
+    'Thatcher Thornberry',
+  ],
   authors: [{ name: `grav` }],
   creator: `grav`,
   publisher: `grav`,
@@ -48,7 +54,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `grav • tech-oriented holding company`,
-    description: 'grav is a tech-oriented holding company that represents the interests of Hunter Chemelli and Thatcher Thornberry.',
+    description:
+      'grav is a tech-oriented holding company that represents the interests of Hunter Chemelli and Thatcher Thornberry.',
     images: {
       url: 'https://grav.solutions/assets/img/social.png',
     },
@@ -71,7 +78,8 @@ export default function RootLayout({
               '@type': 'WebSite',
               url: 'https://grav.solutions',
               name: 'grav',
-              description: 'grav is a tech-oriented holding company that represents the interests of Hunter Chemelli and Thatcher Thornberry.',
+              description:
+                'grav is a tech-oriented holding company that represents the interests of Hunter Chemelli and Thatcher Thornberry.',
               foundingDate: '2023',
               logo: '/assets/img/logo.png',
               sameAs: ['https://www.linkedin.com/company/grav-solutions'],
