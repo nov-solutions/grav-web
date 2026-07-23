@@ -16,7 +16,7 @@ export const companies = [
       'AppOmni is a SaaS Security Posture Management (SSPM) and AI SaaS Security Posture Management (AISPM) platform that gives enterprise companies and their security teams continuous visibility into their SaaS applications, AI-enabled environments, and AI agents.',
     logo: '/assets/img/logos/appomni.png',
     carouselLogo: '/assets/img/carousel/appomni.png',
-    category: 'SSPM, AISPM Platform',
+    category: 'Cybersecurity',
     url: 'https://www.appomni.com',
   },
   {
@@ -26,8 +26,18 @@ export const companies = [
       'Crestborne Capital is an invitation-only private lender providing discerning real estate investors with tailored capital for exceptional opportunities.',
     logo: '/assets/img/logos/crestborne_capital.png',
     carouselLogo: '/assets/img/carousel/crestborne_capital.png',
-    category: 'Private Lender',
+    category: 'Private Banking',
     url: 'https://crestbornecapital.com',
+  },
+  {
+    name: 'FoxIO',
+    tagline: "We solve the world's toughest cyber challenges",
+    description:
+      'FoxIO develops breakthrough innovations in cybersecurity and network visibility that are embedded in the systems powering our connected world. Our technology is integrated into nearly every type of product that handles network traffic and is trusted by thousands of organizations worldwide.',
+    logo: '/assets/img/logos/foxio.png',
+    carouselLogo: '/assets/img/carousel/foxio.png',
+    category: 'Cybersecurity',
+    url: 'https://www.foxio.com',
   },
   {
     name: 'nov',
