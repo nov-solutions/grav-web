@@ -61,7 +61,7 @@ export const companies = [
   },
 ];
 
-export const founders = [
+export const people = [
   {
     name: 'Hunter Chemelli',
     title: 'Co-Founder, General Partner',

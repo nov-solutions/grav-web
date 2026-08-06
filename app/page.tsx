@@ -1,8 +1,7 @@
 import { Nav } from '@/components/Nav';
 import { Hero } from '@/components/Hero';
-import { LogoCarousel } from '@/components/LogoCarousel';
 import { Portfolio } from '@/components/Portfolio';
-import { Founders } from '@/components/Founders';
+import { People } from '@/components/People';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
@@ -10,9 +9,8 @@ export default function Home() {
     <>
       <Nav />
 
-      <section className="h-[75vh] flex flex-col items-center w-full">
+      <section className="flex flex-col items-center w-full">
         <Hero />
-        <LogoCarousel />
       </section>
 
       {/* <Divider /> */}
@@ -30,13 +28,13 @@ export default function Home() {
       {/* <Divider /> */}
 
       <section
-        id="founders"
+        id="people"
         className="py-12 sm:py-16 w-full max-w-screen-xl space-y-9 px-8"
       >
         <h2 className="text-2xl font-serif font-medium tracking-tighter leading-none">
-          Founders
+          People
         </h2>
-        <Founders />
+        <People />
       </section>
 
       <Footer />
