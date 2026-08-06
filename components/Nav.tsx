@@ -6,11 +6,14 @@ import { useState, useEffect } from 'react';
 export const Nav = () => {
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   const [navVisible, setNavVisible] = useState(true);
+  const [atTop, setAtTop] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const isScrollingDown = scrollPosition > prevScrollPosition;
+
+      setAtTop(scrollPosition < 16);
 
       if (Math.abs(scrollPosition - prevScrollPosition) > 70) {
         setNavVisible(!isScrollingDown);
@@ -24,9 +27,9 @@ export const Nav = () => {
 
   return (
     <nav
-      className={`fixed w-screen sm:w-full z-30 backdrop-blur-md bg-black/25 items-center transition-transform duration-300 ${
-        navVisible ? 'translate-y-0' : '-translate-y-full'
-      }`}
+      className={`fixed w-screen sm:w-full z-30 sm:backdrop-blur-md sm:bg-black/25 items-center transition duration-300 ${
+        atTop ? '' : 'backdrop-blur-md bg-black/25'
+      } ${navVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className="py-6 flex mx-auto px-8 justify-between gap-4 sm:gap-8 w-full max-w-screen-xl">
         <Link href="/" className="flex items-center">
